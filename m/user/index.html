@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -56,18 +56,6 @@
 <script src="../res/mui/js/mui.min.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script>
-    // 检测用户是否登录
-    $.ajax({
-        url: 'http://localhost:3000/user/queryUserMessage',
-        type: 'get',
-        success: function (info) {
-            console.log(info);
-
-            if(info.error) {
-                location.href = './login.html';
-            }
-        }
-    });
 </script>
 </body>
 </html>
